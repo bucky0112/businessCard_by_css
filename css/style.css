@@ -46,13 +46,14 @@ table {
 
 .wrap{
 	height: 500px;
-	width: 800px;
+	width: 900px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #35f5a7;
 	padding-top: 80px;
 	padding-left: 50px;
 	box-sizing: border-box;
+	position: relative;
 }
 
 
@@ -62,6 +63,7 @@ table {
 	float: left;
 	font-size: 50px;
 	color: #0B4E3F;
+	margin-right: 10px;
 }
 
 .practice{
@@ -70,6 +72,7 @@ table {
 	font-size: 20px;
 	margin-right: 30px;
 	color: #0B4E3F;
+	letter-spacing: 10px;
 }
 
 .businessCard{
@@ -77,6 +80,10 @@ table {
 	float: left;
 	padding: 20px;
 	border-radius: 10px;
+	position: absolute;
+	right: 200px;
+	overflow: hidden;
+	box-shadow: 3px 3px 5px 5px #44DF9E;
 }
 
 .logo{
@@ -88,6 +95,7 @@ table {
 	margin-bottom: 10px;
 }
 
+
 .name{
 	font-size: 40px;
 	margin-left: 80px;
@@ -96,8 +104,82 @@ table {
 }
 
 .companyInfo{
-	margin-right: 50px;
+	margin-right: 100px;
 	color: #0B4E3F;
+	line-height: 30px;
+}
+
+.cube1{
+	position: absolute;;
+	width: 50px;
+	height: 0;
+	border-width: 0 25px 43px;
+	border-style: solid;
+	border-color: transparent transparent #649D92;
+	right: 95px;
+	top: 85px;
+}
+
+.cube1:before{
+	position: absolute;
+	content:'';
+	top: 43px;
+	left: -25px;
+	right: 50px;
+	width: 50px;
+	height: 0;
+	background: none;
+	border-width: 43px 25px 0;
+	border-style: solid;
+	border-color: #649D92 transparent transparent;
+}
+
+.cube2{
+	position: absolute;
+	width: 100px;
+	height: 0;
+	border-width: 0 50px 87px;
+	border-style: solid;
+	border-color: transparent transparent #27C177;
+	right: -60px;
+	top: -50px;
+}
+
+.cube2:before{
+	position: absolute;
+	content:'';
+	top: 87px;
+	left: -50px;
+	width: 100px;
+	height: 0;
+	background: none;
+	border-width: 87px 50px 0;
+	border-style: solid;
+	border-color: #27C177 transparent transparent;
+}
+
+.cube3{
+	position: absolute;;
+	width: 70px;
+	height: 0;
+	border-width: 0 35px 61px;
+	border-style: solid;
+	border-color: transparent transparent #6AD3A7;
+	right: -15px;
+	bottom: 105px;
+}
+
+.cube3:before{
+	position: absolute;
+	content:'';
+	top: 61px;
+	left: -35px;
+	width: 70px;
+	height: 0;
+	background: none;
+	border-width: 61px 35px 0;
+	border-style: solid;
+	border-color: #6AD3A7 transparent transparent;
 }
 
 .clearfix:after{
