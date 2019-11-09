@@ -56,7 +56,9 @@ table {
 	position: relative;
 }
 
-
+.title{
+	float: left;
+}
 
 .school{
 	writing-mode: vertical-lr;
